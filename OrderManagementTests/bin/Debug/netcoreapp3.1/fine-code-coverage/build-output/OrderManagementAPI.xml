@@ -1,0 +1,188 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OrderManagementAPI</name>
+    </assembly>
+    <members>
+        <member name="T:OrderManagementAPI.Constants.OrderStatusConstants">
+            <summary>
+            Order Status Constants
+            </summary>
+        </member>
+        <member name="F:OrderManagementAPI.Constants.OrderStatusConstants.New">
+            <summary>
+            New
+            </summary>
+        </member>
+        <member name="F:OrderManagementAPI.Constants.OrderStatusConstants.Cancel">
+            <summary>
+            Cancel
+            </summary>
+        </member>
+        <member name="T:OrderManagementAPI.Controllers.OrderController">
+            <summary>
+            Order Controller
+            </summary>
+        </member>
+        <member name="M:OrderManagementAPI.Controllers.OrderController.#ctor(Microsoft.Extensions.Logging.ILogger{OrderManagementAPI.Controllers.OrderController},OrderManagementAPI.Services.IOrderService)">
+            <summary>
+            Constructor for Order Controller
+            </summary>
+        </member>
+        <member name="M:OrderManagementAPI.Controllers.OrderController.Get(System.Int32)">
+            <summary>
+            API to get Order Details
+            </summary>
+        </member>
+        <member name="M:OrderManagementAPI.Controllers.OrderController.Post(OrderManagementAPI.Models.Order)">
+            <summary>
+            API to get Create New order
+            </summary>
+        </member>
+        <member name="M:OrderManagementAPI.Controllers.OrderController.PostOrders(System.Collections.Generic.List{OrderManagementAPI.Models.Order})">
+            <summary>
+            API for Bulk Order Creation
+            </summary>
+        </member>
+        <member name="M:OrderManagementAPI.Controllers.OrderController.PostUpdateOrders(System.Collections.Generic.List{OrderManagementAPI.Models.Order})">
+            <summary>
+            API for Bulk Order Updates
+            </summary>
+        </member>
+        <member name="M:OrderManagementAPI.Controllers.OrderController.Put(System.Int32)">
+            <summary>
+            API to Cancel Order
+            </summary>
+        </member>
+        <member name="T:OrderManagementAPI.Repositories.IOrderRepository">
+            <summary>
+            OrderRepository Interface
+            </summary>
+        </member>
+        <member name="M:OrderManagementAPI.Repositories.IOrderRepository.GetOrderById(System.Int32)">
+            <summary>
+            Get Order By Id
+            </summary>
+        </member>
+        <member name="M:OrderManagementAPI.Repositories.IOrderRepository.CreateOrders(System.Collections.Generic.List{OrderManagementAPI.Models.Order})">
+            <summary>
+            Create New Orders
+            </summary>
+        </member>
+        <member name="M:OrderManagementAPI.Repositories.IOrderRepository.UpdateOrders(System.Collections.Generic.List{OrderManagementAPI.Models.Order})">
+            <summary>
+            Update Orders
+            </summary>
+        </member>
+        <member name="M:OrderManagementAPI.Repositories.IOrderRepository.CreateOrder(OrderManagementAPI.Models.Order)">
+            <summary>
+            Create New Order
+            </summary>
+        </member>
+        <member name="M:OrderManagementAPI.Repositories.IOrderRepository.CancelOrder(System.Int32)">
+            <summary>
+            Cancel Order
+            </summary>
+        </member>
+        <member name="T:OrderManagementAPI.Repositories.OrderRepository">
+            <summary>
+            OrderRepository
+            </summary>
+        </member>
+        <member name="M:OrderManagementAPI.Repositories.OrderRepository.#ctor(Microsoft.Extensions.Logging.ILogger{OrderManagementAPI.Repositories.OrderRepository},OrderManagementAPI.Models.OrderContext)">
+            <summary>
+            OrderRepository Constructor
+            </summary>
+        </member>
+        <member name="M:OrderManagementAPI.Repositories.OrderRepository.GetOrderById(System.Int32)">
+            <summary>
+            Get Order By Id
+            </summary>
+        </member>
+        <member name="M:OrderManagementAPI.Repositories.OrderRepository.CreateOrders(System.Collections.Generic.List{OrderManagementAPI.Models.Order})">
+            <summary>
+            Create New Orders
+            </summary>
+        </member>
+        <member name="M:OrderManagementAPI.Repositories.OrderRepository.UpdateOrders(System.Collections.Generic.List{OrderManagementAPI.Models.Order})">
+            <summary>
+            Update Orders
+            </summary>
+        </member>
+        <member name="M:OrderManagementAPI.Repositories.OrderRepository.CreateOrder(OrderManagementAPI.Models.Order)">
+            <summary>
+            Create New Order
+            </summary>
+        </member>
+        <member name="M:OrderManagementAPI.Repositories.OrderRepository.CancelOrder(System.Int32)">
+            <summary>
+            Cancel Order
+            </summary>
+        </member>
+        <member name="T:OrderManagementAPI.Services.IOrderService">
+            <summary>
+            OrderService Interface
+            </summary>
+        </member>
+        <member name="M:OrderManagementAPI.Services.IOrderService.GetOrderById(System.Int32)">
+            <summary>
+            Get Order By Id
+            </summary>
+        </member>
+        <member name="M:OrderManagementAPI.Services.IOrderService.CreateOrder(OrderManagementAPI.Models.Order)">
+            <summary>
+            Create Order
+            </summary>
+        </member>
+        <member name="M:OrderManagementAPI.Services.IOrderService.CreateOrders(System.Collections.Generic.List{OrderManagementAPI.Models.Order})">
+            <summary>
+            Create Orders
+            </summary>
+        </member>
+        <member name="M:OrderManagementAPI.Services.IOrderService.UpdateOrders(System.Collections.Generic.List{OrderManagementAPI.Models.Order})">
+            <summary>
+            Update Orders
+            </summary>
+        </member>
+        <member name="M:OrderManagementAPI.Services.IOrderService.CancelOrder(System.Int32)">
+            <summary>
+            Cancel Order
+            </summary>
+        </member>
+        <member name="T:OrderManagementAPI.Services.OrderService">
+            <summary>
+            OrderService
+            </summary>
+        </member>
+        <member name="M:OrderManagementAPI.Services.OrderService.#ctor(OrderManagementAPI.Repositories.IOrderRepository)">
+            <summary>
+            OrderService Constructor
+            </summary>
+        </member>
+        <member name="M:OrderManagementAPI.Services.OrderService.GetOrderById(System.Int32)">
+            <summary>
+            Get Order By Id
+            </summary>
+        </member>
+        <member name="M:OrderManagementAPI.Services.OrderService.CreateOrders(System.Collections.Generic.List{OrderManagementAPI.Models.Order})">
+            <summary>
+            Create Orders
+            </summary>
+        </member>
+        <member name="M:OrderManagementAPI.Services.OrderService.UpdateOrders(System.Collections.Generic.List{OrderManagementAPI.Models.Order})">
+            <summary>
+            Update Orders
+            </summary>
+        </member>
+        <member name="M:OrderManagementAPI.Services.OrderService.CreateOrder(OrderManagementAPI.Models.Order)">
+            <summary>
+            Create Orders
+            </summary>
+        </member>
+        <member name="M:OrderManagementAPI.Services.OrderService.CancelOrder(System.Int32)">
+            <summary>
+            Cancel Order
+            </summary>
+        </member>
+    </members>
+</doc>
